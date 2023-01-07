@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+<!--title-->
+{% block title %} Raw Data {% endblock %}
+
+<!--mainBody-->
+{% block mainBody %} 
+    <h2>Raw Data:</h2> 
+    <div id="MainTable">
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Adj close</th>
+            <th>Volume</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+            <td>{{ row[3] }}</td>
+            <td>{{ row[4] }}</td>
+            <td>{{ row[5] }}</td>
+            <td>{{ row[6] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </div>
+{%endblock%}
+
+
+

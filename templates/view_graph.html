@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+<!--title-->
+{% block title %} Graph Page {% endblock %}
+<!-- Add extra to head -->
+{% block extra_head_info %}
+    <!-- Scripts for Plotly Graph to be displayed -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+    <style type="text/css">
+        .header{
+            text-align: center;
+            background-color: rgb(136, 185, 229);
+            height: 70px;
+            line-height: 70px;
+        }
+        .chart{
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+{% endblock %}
+<!-- Header -->
+{% block header %} 
+    <h2>
+        Adjustable results of lumber futures from 03-01-2022 -04-10-2022
+    </h2>
+{% endblock %}
+<!--mainBody-->
+{% block mainBody %} 
+    <h3 style="text-align: center;">"Graph of Timber Futures 2022"</h3>
+    <div id="chart" class="chart"></div>
+    
+    <script type="text/javascript">
+        console.log(document.getElementById('chart'));
+        // Dependant on IDE, below line may show error due to issue reading Jinja2 template in JS. 
+        // Runs without issue.
+        var graphs = {{ graphJSON|safe }};
+        console.log(graphs);
+        Plotly.plot('chart', graphs[0], {});        
+    </script>
+{%endblock%}
+
+<!--Key metrics of period-->
+{% block secondaryBody %} 
+    <h3>Key metrics of period:</h3> 
+    <div id="MainTable">
+    <table>
+        <tr>
+            <th>Max/Mins</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Adj close</th>
+            <th>Volume</th>
+        </tr>
+        <tr>
+            <th>Max Val</th>
+            <td>{{ key_vals[0][0] }}</td>
+            <td>{{ key_vals[2][0] }}</td>
+            <td>{{ key_vals[4][0] }}</td>
+            <td>{{ key_vals[6][0] }}</td>
+            <td>{{ key_vals[8][0] }}</td>
+            <td>{{ key_vals[10][0] }}</td>
+            
+        </tr>
+        <tr>
+            <th>Min Val</th>
+            <td>{{ key_vals[1][0] }}</td>
+            <td>{{ key_vals[3][0] }}</td>
+            <td>{{ key_vals[5][0] }}</td>
+            <td>{{ key_vals[7][0] }}</td>
+            <td>{{ key_vals[9][0] }}</td>
+            <td>{{ key_vals[11][0] }}</td>
+        </tr>
+    </table>
+    </div>
+{%endblock%}
