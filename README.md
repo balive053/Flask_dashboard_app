@@ -9,4 +9,4 @@ About page
 Graphical display and summary stats
 Raw data view
 
-![home page view](http://url/to/img.png)
+![home page view](https://github.com/balive053/Flask_dashboard_app/blob/main/static/Screenshot%20home.jpg)
