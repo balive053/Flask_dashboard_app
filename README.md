@@ -17,6 +17,6 @@ Built using standard MTV architecture for flask comprising of 4 seperate views:<
 
 ![Graphical display view](https://github.com/balive053/Flask_dashboard_app/blob/main/static/Screenshot_graph_view.jpg)
 
-<h3Raw data View </h3>
+<h3>Raw data View </h3>
 
 ![Raw data view](https://github.com/balive053/Flask_dashboard_app/blob/main/static/Screenshot_rawdata_view.jpg)
