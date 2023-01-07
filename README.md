@@ -11,4 +11,12 @@ Raw data view
 
 <h3>Home View</h3>
 
-![home page view](https://github.com/balive053/Flask_dashboard_app/blob/main/static/Screenshot_home_view.jpg)
+![Home page view](https://github.com/balive053/Flask_dashboard_app/blob/main/static/Screenshot_home_view.jpg)
+
+<h3>Graphical display</h3>
+
+![Graphical display view](https://github.com/balive053/Flask_dashboard_app/blob/main/static/Screenshot_graph_view.jpg)
+
+<h3Raw data View</h3>
+
+![Raw data view](https://github.com/balive053/Flask_dashboard_app/blob/main/static/Screenshot_rawdata_view.jpg)
