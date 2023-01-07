@@ -1,0 +1,37 @@
+h1 {
+    text-align: center;
+}
+table {
+    width: 100%;
+    text-align: center;
+}
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+#header {
+    padding: 56px;
+    background: #ff6e30;
+    color: white;
+}
+#MainTable {
+    padding: 30px
+}
+#footer {
+    text-align: center;
+    text-size-adjust: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;    
+    width: 100%;
+    background: #ff6e30;
+    color: white;
+    height: 30px;
+}
+li {
+    display: inline;
+  }
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
