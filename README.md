@@ -3,11 +3,11 @@ A dashboard app to display analytical data from lumbers futures using a Dask vis
 
 Uses a Flask backend and a SQLite3 database.
 
-Built using standard MTV architecture for flask comprising of 4 seperate views:
-Home page
-About page
-Graphical display and summary stats
-Raw data view
+Built using standard MTV architecture for flask comprising of 4 seperate views:<br>
+<i>Home page</i><br>
+<i>About page</i><br>
+<i>Graphical display and summary stats</i><br>
+<i>Raw data view</i><br>
 
 <h3>Home View</h3>
 
